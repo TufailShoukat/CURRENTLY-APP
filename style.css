@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 0px;
+    background: linear-gradient(101.9deg, rgb(18, 24, 39) 1.6%, rgb(19, 27, 36) 51.2%, rgb(15, 16, 29) 99.8%);
+    padding: 40px;
+    border-radius: 50px;
+}
+
+b {
+    color: goldenrod;
+}
+
+.day_diver {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 410px;
+    font-family: cursive;
+    transition: all 0.3s ease;
+}
+
+.day_diver:hover {
+    transform: scale(1.05);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    border-image: linear-gradient(101.9deg, #112324, #294869, #101d7d) 1 1;
+}
+
+
+
+span {
+    font-size: 40px;
+    font-weight: bolder;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+span:hover {
+    transform: rotate(360deg);
+}
+
+#day {
+    background: linear-gradient(145deg, #28a745, #218838);
+    color: #ffffff;
+    box-shadow: 3px 3px 8px #21703a, -3px -3px 8px #29a04d;
+    width: 150px;
+    height: 50px;
+    font-family: cursive;
+    position: relative;
+    animation: textAnimation 2s infinite;
+    transition: background 0.3s ease;
+}
+
+#day:hover {
+    background: linear-gradient(145deg, #218838, #28a745);
+}
+
+.time_diver {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff;
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+    position: relative;
+    animation: textAnimation 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.time_diver:hover {
+    transform: scale(1.05);
+}
+
+.date_diver {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff;
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+    position: relative;
+    animation: textAnimation 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.date_diver:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the <h1> element */
+span {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 22px;
+    color: gold;
+    font-family: cursive;
+    display: inline-block;
+    position: relative;
+    animation: textAnimation 2s infinite;
+
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
